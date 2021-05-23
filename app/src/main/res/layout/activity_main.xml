@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
+
+
     >
     <GridView
         android:layout_width="match_parent"
@@ -18,5 +21,20 @@
         android:gravity="center"
         android:divider="@color/black"
         android:dividerHeight="1dp"/>
+    <ProgressBar
+        android:visibility="invisible"
+        android:id="@+id/progress"
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="150dp"
+        android:layout_alignRight="@+id/list_lang"
+        android:layout_alignLeft="@+id/list_lang"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignEnd="@+id/list_lang"
+        android:layout_alignStart="@+id/list_lang"
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="150dp"/>
 
-</LinearLayout>
+</RelativeLayout>
